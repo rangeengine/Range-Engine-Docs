@@ -76,6 +76,12 @@ base class --- :class:`SCA_IObject`
 
          The object must have a physics controller for the mass to be applied, otherwise the mass value will be returned as 0.0.
 
+   .. attribute:: friction
+
+      The object's friction
+
+      :type: float
+
    .. attribute:: isSuspendDynamics
 
       The object's dynamic state (read-only).
@@ -304,11 +310,23 @@ base class --- :class:`SCA_IObject`
 
       :type: boolean
 
+   .. attribute:: physicsCullingVelocity
+
+      Stop physics after the object stops.
+
+      :type: boolean
+
    .. attribute:: logicCulling
 
       True if the object suspends its logic and animation depending on its nearest distance to any camera.
 
       :type: boolean
+
+   .. attribute:: logicCullingComponents
+
+   No Suspend execution of object components.
+
+   :type: boolean
 
    .. attribute:: physicsCullingRadius
 
