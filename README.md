@@ -1,26 +1,9 @@
-# UPBGE Documentation
+![](GitHub_Readme1.png)
 
-## [View the latest build of this documentation](https://upbge-docs.readthedocs.io/en/latest/)
+RanGE (**Range Engine**) is a fork of UPBGE created by Rafael Tavares and some of his friends in August 2022.
 
-Welcome to the official repository of UPBGE's Manual and Python API. UPBGE's source code repository can be found [here](https://github.com/UPBGE/blender).
+RanGE is a light and powerfull game engine, and its aim is to clean up and improve current Uchronia Project Blender Game Engine 0.2.5b (UPBGE) code, experiment with new features, and implement forgotten features that have not been merged with the UPBGE trunk.
 
-You can contribute by opening an issue asking for a topic to be included in the documentation, or by opening a pull request with the desired changes.
-
-## Requirements
-To build this documentation, it's required:
-- [Python 3](https://www.python.org/)
-- [Sphinx](https://pypi.org/project/Sphinx/)
-- [Read The Docs Theme for Sphinx](https://pypi.org/project/sphinx_rtd_theme/)
-
-Once every dependency is instaled, simply open the console on the top level directory and run the command:
-
-`make html`
-
-The documentation will be built in the directory **build**.
-
-## Credits:
-- Joel Gomes da Silva (joelgomes1994)
-- Tristan Porteries (panzergame)
-- Youle31
-- Jorge Bernal (lordloki)
-- You!
+## What's new?
+You can take a look at the release notes to see all the new features:
+[RanGE **Release Notes**](https://github.com/RafaelTavars/Range-Engine-Wiki/wiki/Release-notes-version-1.0)
