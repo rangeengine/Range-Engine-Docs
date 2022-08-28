@@ -19,9 +19,9 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'UPBGE Manual'
+project = 'Range Game Engine Manual'
 copyright = 'This page is licensed under a CC-BY-SA 4.0 Int. License.'
-author = 'UPBGE Community'
+author = 'UPBGE/Range Community'
 
 # The short X.Y version
 version = 'latest'
@@ -87,7 +87,7 @@ html_theme_options = {
     # 'navigation_depth': 4,  # Depth of the headers shown in the navigation bar
 }
 
-html_logo = 'images/upbge_logo.png'
+html_logo = 'images/range_logo.png'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -114,7 +114,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'UPBGEManualdoc'
+htmlhelp_basename = 'RANGEManualdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -141,8 +141,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'UPBGEManual.tex', 'UPBGE Manual Documentation',
-     'UPBGE Community', 'manual'),
+    (master_doc, 'UPBGEManual.tex', 'Range Manual Documentation',
+     'Range Community', 'manual'),
 ]
 
 
@@ -151,7 +151,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'upbgemanual', 'UPBGE Manual Documentation',
+    (master_doc, 'upbgemanual', 'Range Manual Documentation',
      [author], 1)
 ]
 
@@ -162,7 +162,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'UPBGEManual', 'UPBGE Manual Documentation',
+    (master_doc, 'UPBGEManual', 'Range Manual Documentation',
      author, 'UPBGEManual', 'One line description of project.',
      'Miscellaneous'),
 ]

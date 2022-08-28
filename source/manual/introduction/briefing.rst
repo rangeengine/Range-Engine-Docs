@@ -6,20 +6,15 @@ Briefing
 History
 -------
 
-The **Uchronia Project Blender Game Engine** (UPBGE) is a `Blender <https://www.blender.org/>`__'s builtin tool for 
-real-time projects, from architectural visualizations and simulations to games.
-
-Originally a fork from the Blender Foundation's `Blender Game Engine <https://en.wikipedia.org/wiki/Blender_Game_Engine>`__, 
-became indepent with the Blender Foundation's announcement of BGE's removal and 
-replacement with a new Interactive Engine. With this independency, the UPBGE's developers 
-have freedom to change and add features that could not be changed before (because the 
-possibility of an official Blender merge, now discarded).
+RanGE is a light and powerfull game engine and 
+its aim is to clean up and improve current **Uchronia Project Blender Game Engine 0.2.5b (UPBGE)** code, experiment with new features, and 
+implement forgotten features that have not been merged with the UPBGE trunk.
 
 Features
 --------
 
-UPBGE have lots of `new features <https://github.com/UPBGE/blender/wiki/Release-notes>`__, 
-improvements and bugs fixed that BGE haven't. Some features that UPBGE supports are:
+Range have lots of `new features <https://github.com/RangeGameEngine/Range-Engine-Wiki/wiki/Release-notes>`__, 
+improvements and bugs fixed that UPBGE haven't. Some features that Range supports are:
 
 - Realtime advanced physics powered by `Bullet <https://github.com/bulletphysics/bullet3>`__, including rigid bodies, soft bodies, obstacle simulation and path finding.
 - Fully integrated audio engine powered by `OpenAL <https://www.openal.org/>`__ and `SDL <https://www.libsdl.org/>`__, supporting 3D sound and sound effects.
@@ -34,8 +29,4 @@ improvements and bugs fixed that BGE haven't. Some features that UPBGE supports 
 Development
 -----------
 
-UPBGE is maintained by a group of developers in their spare time and its community. You 
-can contribute to UPBGE if you code in C++ or Python: just `open a pull request <https://github.com/UPBGE/blender/pulls>`__, 
-submit your changes and wait for the reviewers. Also, even if you don't code, you can 
-contribute by submiting bug reports, feature requests and participating discussions 
-`on issues <https://github.com/UPBGE/blender/issues>`__.
+Development is being supported by the community, support the project on patreon.

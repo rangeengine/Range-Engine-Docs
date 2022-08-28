@@ -4,15 +4,17 @@
    contain the root `toctree` directive.
    
 ============
-UPBGE Manual
+Range Manual
 ============
 
-Welcome to UPBGE's Documentation! Here you will 
-find definitions of the available tools and features in UPBGE, step-by-step 
+Welcome to Range's Documentation! Here you will 
+find definitions of the available tools and features in Range Game Engine, step-by-step 
 tutorials to certain tasks and the Python API for game logic programming 
 with detailed information (and examples in some cases).
 
-`Visit the UPBGE's website <https://upbge.org/>`__ or `contribute to this manual <https://github.com/UPBGE/UPBGE-Docs>`__.
+Note: this api is from UPBGE and is still being adapted.
+
+`Visit the Range's website <https://rangeengine.tech/>`__.
 
 .. toctree::
    :maxdepth: 2
