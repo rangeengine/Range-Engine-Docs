@@ -8,7 +8,7 @@ if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
 )
 set SOURCEDIR=source
-set BUILDDIR=build
+set BUILDDIR=RangeDoc_Build
 set SPHINXPROJ=UPBGEManual
 
 if "%1" == "" goto help
