@@ -393,6 +393,28 @@ Time related functions
 
     :arg time_scale: The new time multiplier.
 
+.. function:: deltaTime()
+
+    The interval in seconds from the last frame to the current one (Read Only).
+
+    The following example rotates a :class:`KX_GameObject` around its z axis at a constant speed.
+
+    .. code-block:: python
+      
+      from bge import *
+      from collections import OrderedDict
+
+      class ConstantRotation(types.KX_PythonComponent):
+         args = OrderedDict({ })
+
+         def start(self, args):
+            self.degreesPerSecond = 2
+
+         def update(self):
+            self.object.applyRotation([0, 0, self.degreesPerSecond * logic.deltaTime()])
+
+    :rtype: double
+
 .. function:: getUseExternalClock()
 
     Get if the BGE use the inner BGE clock, or rely or on an external

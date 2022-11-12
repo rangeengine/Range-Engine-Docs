@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
    
 ============
-Range Manual
+Range Manual (1.2 Version)
 ============
 
 Welcome to Range's Documentation! Here you will 
