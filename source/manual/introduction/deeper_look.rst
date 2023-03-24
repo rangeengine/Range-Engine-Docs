@@ -71,8 +71,8 @@ There are a number of powerful libraries the Range takes advantage of:
 
 - `Audaspace <https://audaspace.github.io/>`__: A sound library for control of audio. Uses OpenAL or SDL.
 - `Bullet <http://bulletphysics.org/wordpress/>`__: A physics engine featuring 3D collision detection, soft body dynamics and rigid body dynamics.
-- `Detour <http://masagroup.github.io/recastdetour/>`__: A pathfinding and spatial reasoning toolkit.
-- `Recast <http://masagroup.github.io/recastdetour/>`__: A state of the art navigation mesh construction tool set for games.
+- `Detour <http://recastnav.com/>`__: A pathfinding and spatial reasoning toolkit.
+- `Recast <http://recastnav.com/>`__: A state of the art navigation mesh construction tool set for games.
 
 Project Development Process
 ===========================
