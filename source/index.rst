@@ -3,18 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
    
-============
-Range Manual (1.2 Version)
-============
+=======================
+Range Engine 1.4 Manual
+=======================
 
-Welcome to Range's Documentation! Here you will 
+Welcome to Range Engine Documentation! Here you will 
 find definitions of the available tools and features in Range Game Engine, step-by-step 
 tutorials to certain tasks and the Python API for game logic programming 
 with detailed information (and examples in some cases).
 
-Note: this api is from UPBGE and is still being adapted.
 
-`Visit the Range's website <https://rangeengine.tech/>`__.
+`Visit the Range Engine website <https://rangeengine.tech/>`__!
 
 .. toctree::
    :maxdepth: 2

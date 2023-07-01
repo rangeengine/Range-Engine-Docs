@@ -19,9 +19,9 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Range Game Engine Manual'
+project = 'Range Engine Manual'
 copyright = 'This page is licensed under a CC-BY-SA 4.0 Int. License.'
-author = 'UPBGE/Range Community'
+author = 'Range Engine'
 
 # The short X.Y version
 version = 'latest'
@@ -74,19 +74,23 @@ highlight_language = 'python3'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_book_theme'
 
 # Theme options
 html_theme_options = {
     # 'typekit_id': 'hiw1hhg',
     # 'analytics_id': '',
     # 'sticky_navigation': True  # Set to False to disable the sticky nav while scrolling.
-    #'logo_only': True,  # if we have a html_logo below, this shows /only/ the logo with no title text
-    #'collapse_navigation': False,  # Collapse navigation (False makes it tree-like)
+    # 'logo_only': True,  # if we have a html_logo below, this shows /only/ the logo with no title text
+    # 'collapse_navigation': False,  # Collapse navigation (False makes it tree-like)
     # 'display_version': True,  # Display the docs version
     # 'navigation_depth': 4,  # Depth of the headers shown in the navigation bar
 }
+html_context = {
+    'default_mode': 'dark',
+}
 
+html_favicon = '_static/favicon/favicon.png'
 html_logo = 'images/range_logo.png'
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -99,6 +103,7 @@ html_logo = 'images/range_logo.png'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_css_files = ['css/custom.css']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.

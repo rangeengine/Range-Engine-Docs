@@ -156,7 +156,7 @@ Blender Data
 .. _bge-types-upbge-data:
 
 ==========
-UPBGE Data
+RanGE Data
 ==========
 
 .. hlist::
@@ -170,6 +170,8 @@ UPBGE Data
    * :class:`KX_2DFilterManager`
    * :class:`KX_2DFilterOffScreen`
    * :class:`KX_2DFilter`
+   * :class:`KX_AnimationEvent`
+   * :class:`KX_AnimationEventsManager`
    * :class:`KX_BatchGroup`
    * :class:`KX_BoundingBox`
    * :class:`KX_CharacterWrapper`

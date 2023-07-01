@@ -1,34 +1,27 @@
 
-**************************
+******************
 Licensing of Games
-**************************
+******************
 
-Blender and the UPBGE/BGE are licensed as GNU GPL, which means that your games
-(if they include Blender software) have to comply with that license as well.
-This only applies to the software, or the bundle if it has software in it, not 
-to the artwork you make with Blender. All your Blender creations are your sole property.
+Range Engine are licensed as GNU GPL, but now RanGE is using it's own exporter
+with MIT license. The Range Armor is a tool that allows you to package your game data 
+files and launch them separated from the blenderplayer executable, this exporter do not
+bundle any RanGE components so you have all the rights of your game.
 
-GNU GPL -- also called "Free Software" -- is a license that aims at keeping the licensed 
-software free, forever. GNU GPL does not allow you to add new restrictions or limitations 
-on the software you received under that license. That works fine if you want your clients 
-or your audience to have the same rights as you have (with Blender).
+In summary, the software and source code of Range Engine are bound to the GNU GPL,
+but the Range Armor and .range/.rasec files (models, textures, sounds) are not.
 
-In summary, the software and source code are bound to the GNU GPL, but the blend-files
-(models, textures, sounds) are not.
+.. figure:: /images/range-armor.png
 
+`⚙ Learn here how to export a project using Range Armor <../tutorials/range_armor/index.html>`__
 
 Standalone Games
 ================
 
-In case you save out your game as a single standalone (using addons for this purpose, 
-for example), the blend-file gets included in the binary (the Blender Player). That requires 
-the blend-file to be compatible with the GNU GPL license.
-
-In this case, you could decide to load and run another blend-file game (using the Game Actuator logic brick).
-That file then is not part of the binary, so you can apply any license you wish on it.
+When you export your game using Range Armor, your .range/.rasec is encrypted and protected with
+three steps security, you also have all the rights of your project so you can sell and 
+distribute without license problems.
 
 
-More Information
-================
 
-More information you can find in the `blender.org FAQ <https://www.blender.org/support/faq/>`__.
+

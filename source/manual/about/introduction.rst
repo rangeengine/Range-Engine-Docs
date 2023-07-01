@@ -1,15 +1,15 @@
 .. _about-introduction:
 
 ++++++++++++++++++++++++++++++++
-Introduction to the UPBGE Manual
+Introduction to the Range Manual
 ++++++++++++++++++++++++++++++++
 
 Our aim to provide a complete and concise reference manual.
 
 The manual has as a goal to provide:
 
-   - Insight in Blender/UPBGE's way of working, its internal (technical) design - in order to understand options and tools.
-   - Detailed functional description of all features, tools and options in UPBGE.
+   - Insight in RanGE's way of working, its internal (technical) design - in order to understand options and tools.
+   - Detailed functional description of all features, tools and options in Range Engine.
 
 ===========
 Conventions

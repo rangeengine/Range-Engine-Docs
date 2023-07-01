@@ -8,3 +8,4 @@ Tutorials
 
    getting_started/index
    introducing_python/index
+   range_armor/index

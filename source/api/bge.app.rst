@@ -6,6 +6,21 @@ Module to access application values that remain unchanged during runtime.
 
 .. module:: bge.app
 
+.. data:: range_version
+
+   The Range Engine version as a tuple of 3 ints, eg. (1, 4, 100).
+
+   .. note:: Version tuples can be compared simply with (in)equality symbols;
+             for example, ``(1, 4, 100) <= (1, 4, 100)`` returns True (lexical order).
+
+   :type: tuple of three ints
+
+.. data:: range_version_string
+
+   The Range Engine version formatted as a string, eg. "1.4.100".
+
+   :type: str
+
 .. data:: version
 
    The Blender/BGE version as a tuple of 3 ints, eg. (2, 79, 1).

@@ -166,6 +166,12 @@ base class --- :class:`SCA_IObject`
 
          Applies to dynamic and rigid body objects only.
 
+   .. attribute:: animationEventsManager
+
+      It is possible to collect information from animation events in the object.
+
+      :type: :class:`KX_AnimationEventsManager`
+
    .. attribute:: localInertia
 
       the object's inertia vector in local coordinates. Read only.
@@ -613,19 +619,28 @@ base class --- :class:`SCA_IObject`
    .. method:: alignAxisToVect(vect, axis=2, factor=1.0)
 
       Aligns any of the game object's axis along the given vector.
+      
+      (Deprecated method, use lookAt() instead)
+
+   .. warning::
+      Deprecated, use :py:meth:`lookAt` instead.
+
+   .. method:: lookAt(vect, axis=2, factor=1.0)
+
+   Aligns any of the game object's axis along the given vector.
 
 
-      :arg vect: a vector to align the axis.
-      :type vect: 3D vector
-      :arg axis: The axis you want to align
+   :arg vect: a vector to align the axis.
+   :type vect: 3D vector
+   :arg axis: The axis you want to align
 
-         * 0: X axis
-         * 1: Y axis
-         * 2: Z axis
+      * 0: X axis
+      * 1: Y axis
+      * 2: Z axis
 
-      :type axis: integer
-      :arg factor: Only rotate a feaction of the distance to the target vector (0.0 - 1.0)
-      :type factor: float
+   :type axis: integer
+   :arg factor: Only rotate a feaction of the distance to the target vector (0.0 - 1.0)
+   :type factor: float
 
    .. method:: getAxisVect(vect)
 
@@ -931,7 +946,7 @@ base class --- :class:`SCA_IObject`
       :return: the first object hit or None if no object or object does not match prop
       :rtype: :class:`KX_GameObject`
 
-   .. method:: rayCast(objto, objfrom=None, dist=0, prop="", face=False, xray=False, poly=0, mask=0xFFFF)
+   .. method:: rayCast(objto, objfrom=None, dist=0, prop="", face=False, xray=False, poly=0, mask=0xFFFF, debug=False)
 
       Look from a point/object to another point/object and find first object hit within dist that matches prop.
       if poly is 0, returns a 3-tuple with object reference, hit point and hit normal or (None, None, None) if no hit.
@@ -985,6 +1000,8 @@ base class --- :class:`SCA_IObject`
       :type poly: integer
       :arg mask: collision mask: The collision mask (16 layers mapped to a 16-bit integer) is combined with each object's collision group, to hit only a subset of the objects in the scene. Only those objects for which ``collisionGroup & mask`` is true can be hit.
       :type mask: bitfield
+      :arg debug: debug option: True=> draw the rayCast line; False or omitted=> do nothing.
+      :type debug: boolean
       :return: (object, hitpoint, hitnormal) or (object, hitpoint, hitnormal, polygon) or (object, hitpoint, hitnormal, polygon, hituv).
 
          * object, hitpoint and hitnormal are None if no hit.
