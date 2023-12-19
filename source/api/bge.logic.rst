@@ -124,13 +124,23 @@ General functions
 
    :rtype: list of string
 
-.. function:: loadGlobalDict()
+.. function:: loadGlobalDict(path, extensionName)
 
    Loads bge.logic.globalDict from a file.
 
-.. function:: saveGlobalDict()
+   .. code-block:: python
+      
+      logic.loadGlobalDict("Saves\Save1", "gamesave")
+      print(logic.globalDict["Name"])
+
+.. function:: saveGlobalDict(path, extensionName)
 
    Saves bge.logic.globalDict to a file.
+
+   .. code-block:: python
+      
+      logic.globalDict["Name"] = "Range"
+      logic.saveGlobalDict("Saves\Save1", "gamesave")
 
 .. function:: startGame(blend)
 
@@ -469,6 +479,15 @@ Utility functions
 .. function:: getBlendFileList(path = "//")
 
    Returns a list of blend files in the same directory as the open blend file, or from using the option argument.
+
+   :arg path: Optional directory argument, will be expanded (like expandPath) into the full path.
+   :type path: string
+   :return: A list of filenames, with no directory prefix
+   :rtype: list
+
+.. function:: getRasecFileList(path = "//")
+
+   Returns a list of rasec files in the same directory as the open rasec file, or from using the option argument.
 
    :arg path: Optional directory argument, will be expanded (like expandPath) into the full path.
    :type path: string

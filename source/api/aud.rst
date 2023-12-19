@@ -5,6 +5,9 @@ Audio System (aud)
 
 This module provides access to the audaspace audio library.
 
+.. warning:: Currently the updated version of the aud manual is located in the Blender 2.8+ API.
+            https://docs.blender.org/api/current/aud.html
+
 Basic Sound Playback
 --------------------
 
