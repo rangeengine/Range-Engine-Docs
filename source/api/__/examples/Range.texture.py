@@ -1,12 +1,12 @@
-import bge
-from bge import texture
-from bge import logic
+import Range
+from Range import texture
+from Range import logic
 
 cont = logic.getCurrentController()
 obj = cont.owner
 
 # the creation of the texture must be done once: save the
-# texture object in an attribute of bge.logic module makes it persistent
+# texture object in an attribute of Range.logic module makes it persistent
 if not hasattr(logic, 'video'):
 
     # identify a static texture by name

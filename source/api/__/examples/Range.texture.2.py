@@ -1,6 +1,6 @@
-import bge
-from bge import logic
-from bge import texture as vt
+import Range
+from Range import logic
+from Range import texture as vt
 
 # The default vertex shader, because we need one
 #

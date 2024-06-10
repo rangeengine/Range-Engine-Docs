@@ -3,8 +3,8 @@ Basic Physics Constraint
 ++++++++++++++++++++++++
 Example of how to create a hinge Physics Constraint between two objects.
 """
-from bge import logic
-from bge import constraints
+from Range import logic
+from Range import constraints
 
 # get object list
 objects = logic.getCurrentScene().objects

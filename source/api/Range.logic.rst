@@ -1,5 +1,5 @@
 
-Game Logic (bge.logic)
+Game Logic (Range.logic)
 ======================
 
 ************
@@ -8,18 +8,18 @@ Introduction
 
 Module to access logic functions, imported automatically into the python controllers namespace.
 
-.. module:: bge.logic
+.. module:: Range.logic
 
 .. code-block:: python
 
    # To get the controller thats running this python script:
-   cont = bge.logic.getCurrentController() # bge.logic is automatically imported
+   cont = Range.logic.getCurrentController() # Range.logic is automatically imported
    
    # To get the game object this controller is on:
    obj = cont.owner
 
 :class:`KX_GameObject`, :class:`KX_Camera` or :class:`KX_LightObject` methods are 
-available depending on the type of object. See :ref:`object types <bge-types-objects>` 
+available depending on the type of object. See :ref:`object types <Range-types-objects>` 
 for more reference.
 
 .. code-block:: python
@@ -34,7 +34,7 @@ for more reference.
    # To get a sequence of all sensors:
    sensors = co.sensors
 
-See the :ref:`available sensors <bge-types-sensors>` reference for available attributes.
+See the :ref:`available sensors <Range-types-sensors>` reference for available attributes.
 
 You can also access actuators linked to the controller
 
@@ -49,7 +49,7 @@ You can also access actuators linked to the controller
    # Activate an actuator
    controller.activate(actuator)
 
-See the :ref:`available actuators <bge-types-actuators>` reference for available attributes.
+See the :ref:`available actuators <Range-types-actuators>` reference for available attributes.
 
 Most logic brick's methods are accessors for the properties available in the logic buttons.
 Consult the logic bricks documentation for more information on how each logic brick works.
@@ -59,7 +59,7 @@ There are also methods to access the current :class:`KX_Scene`
 .. code-block:: python
 
    # Get the current scene
-   scene = bge.logic.getCurrentScene()
+   scene = Range.logic.getCurrentScene()
 
    # Get the current camera
    cam = scene.active_camera
@@ -126,7 +126,7 @@ General functions
 
 .. function:: loadGlobalDict(path, extensionName)
 
-   Loads bge.logic.globalDict from a file.
+   Loads Range.logic.globalDict from a file.
 
    .. code-block:: python
       
@@ -135,7 +135,7 @@ General functions
 
 .. function:: saveGlobalDict(path, extensionName)
 
-   Saves bge.logic.globalDict to a file.
+   Saves Range.logic.globalDict to a file.
 
    .. code-block:: python
       
@@ -322,14 +322,14 @@ General functions
 
    Gets the key used to exit the game engine
 
-   :return: The key (defaults to :mod:`bge.events.ESCKEY`)
+   :return: The key (defaults to :mod:`Range.events.ESCKEY`)
    :rtype: int
 
 .. function:: setExitKey(key)
 
    Sets the key used to exit the game engine
 
-   :arg key: A key constant from :mod:`bge.events`
+   :arg key: A key constant from :mod:`Range.events`
    :type key: int
 
 .. function:: NextFrame()
@@ -364,14 +364,14 @@ Time related functions
 
 .. function:: getClockTime()
 
-    Get the current BGE render time, in seconds. The BGE render time is the
+    Get the current Range render time, in seconds. The Range render time is the
     simulation time corresponding to the next scene that will be rendered.
 
     :rtype: double
 
 .. function:: getFrameTime()
 
-    Get the current BGE frame time, in seconds. The BGE frame time is the
+    Get the current Range frame time, in seconds. The Range frame time is the
     simulation time corresponding to the current call of the logic system.
     Generally speaking, it is what the user is interested in.
 
@@ -411,7 +411,7 @@ Time related functions
 
     .. code-block:: python
       
-      from bge import *
+      from Range import *
       from collections import OrderedDict
 
       class ConstantRotation(types.KX_PythonComponent):
@@ -427,14 +427,14 @@ Time related functions
 
 .. function:: getUseExternalClock()
 
-    Get if the BGE use the inner BGE clock, or rely or on an external
-    clock. The default is to use the inner BGE clock.
+    Get if the Range use the inner Range clock, or rely or on an external
+    clock. The default is to use the inner Range clock.
 
     :rtype: bool
 
 .. function:: setUseExternalClock(use_external_clock)
 
-    Set if the BGE use the inner BGE clock, or rely or on an external
+    Set if the Range use the inner Range clock, or rely or on an external
     clock. If the user selects the use of an external clock, he should call
     regularly the setClockTime method.
 
@@ -447,7 +447,7 @@ Time related functions
     block can easily lead to a blocked system (if the time does not advance
     enough to run at least the next logic step).
 
-    :arg new_time: the next value of the BGE clock (in second).
+    :arg new_time: the next value of the Range clock (in second).
     
 
 *****************

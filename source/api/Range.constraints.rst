@@ -1,6 +1,6 @@
 
-Physics Constraints (bge.constraints)
-=====================================
+Physics Constraints (Range.constraints)
+=======================================
 
 Bullet Physics provides collision detection
 and rigid body dynamics for the Blender Game Engine.
@@ -12,7 +12,7 @@ Features:
 - Access to internal physics settings,
   like deactivation time, and debugging features
 
-.. module:: bge.constraints
+.. module:: Range.constraints
 
 .. note:: Note about parameter settings
 
@@ -31,7 +31,7 @@ Examples
 
 Example of how to create a hinge Physics Constraint between two objects.
 
-.. literalinclude:: __/examples/bge.constraints.py
+.. literalinclude:: __/examples/Range.constraints.py
 	
 Functions
 ---------
@@ -75,7 +75,7 @@ Functions
    :type flag: int
 
    :return: A constraint wrapper.
-   :rtype: :class:`~bge.types.KX_ConstraintWrapper`
+   :rtype: :class:`~Range.types.KX_ConstraintWrapper`
 
 .. function:: createVehicle(physicsid)
 
@@ -85,7 +85,7 @@ Functions
    :type physicsid: int
 
    :return: A vehicle constraint wrapper.
-   :rtype: :class:`~bge.types.KX_VehicleWrapper`
+   :rtype: :class:`~Range.types.KX_VehicleWrapper`
 
 .. function:: exportBulletFile(filename)
 
@@ -110,15 +110,15 @@ Functions
    :type constraintId: int
 
    :return: A vehicle constraint object.
-   :rtype: :class:`~bge.types.KX_VehicleWrapper`
+   :rtype: :class:`~Range.types.KX_VehicleWrapper`
 
 .. function:: getCharacter(gameobj)
 
    :arg gameobj: The game object with the character physics.
-   :type gameobj: :class:`~bge.types.KX_GameObject`
+   :type gameobj: :class:`~Range.types.KX_GameObject`
 
    :return: Character wrapper.
-   :rtype: :class:`~bge.types.KX_CharacterWrapper`
+   :rtype: :class:`~Range.types.KX_CharacterWrapper`
 
 .. function:: removeConstraint(constraintId)
 

@@ -27,9 +27,8 @@ Notes: * these shaders only decode the RGB channel and set the alpha channel to 
 value (look for color.a = ). It's up to you to add postprocessing to the color.
        * these shaders are compatible with 2D and 3D video stream
 """
-import bge
-from bge import logic
-from bge import texture as vt
+from Range import logic
+from Range import texture as vt
 
 # The default vertex shader, because we need one
 #

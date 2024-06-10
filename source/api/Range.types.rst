@@ -1,8 +1,8 @@
 
-Game Types (bge.types)
+Game Types (Range.types)
 ======================
 
-.. module:: bge.types
+.. module:: Range.types
 
 ************
 Introduction
@@ -17,10 +17,10 @@ The following example would move an object (i.e. an instance of
 
 .. code-block:: python
 
-   # bge.types.SCA_PythonController
-   cont = bge.logic.getCurrentController()
+   # Range.types.SCA_PythonController
+   cont = Range.logic.getCurrentController()
 
-   # bge.types.KX_GameObject
+   # Range.types.KX_GameObject
    obj = cont.owner
    obj.worldPosition.z += 1
 
@@ -31,7 +31,7 @@ a :class:`SCA_PythonController` logic brick.
 Categories
 **********
 
-.. _bge-types-objects:
+.. _Range-types-objects:
 
 =======
 Objects
@@ -56,7 +56,7 @@ Logic Bricks
 
    * :class:`SCA_ILogicBrick`
 
-.. _bge-types-sensors:
+.. _Range-types-sensors:
 
 -------
 Sensors
@@ -83,7 +83,7 @@ Sensors
    * :class:`SCA_PropertySensor`
    * :class:`SCA_RandomSensor`
 
-.. _bge-types-controllers:
+.. _Range-types-controllers:
 
 -----------
 Controllers
@@ -101,7 +101,7 @@ Controllers
    * :class:`SCA_XNORController`
    * :class:`SCA_PythonController`
 
-.. _bge-types-actuators:
+.. _Range-types-actuators:
 
 ---------
 Actuators
@@ -135,7 +135,7 @@ Actuators
    * :class:`SCA_RandomActuator`
    * :class:`SCA_VibrationActuator`
 
-.. _bge-types-blender-data:
+.. _Range-types-blender-data:
 
 ============
 Blender Data
@@ -153,7 +153,7 @@ Blender Data
    * :class:`KX_Scene`
    * :class:`KX_WorldInfo`
 
-.. _bge-types-upbge-data:
+.. _Range-types-upRange-data:
 
 ==========
 RanGE Data
@@ -199,5 +199,5 @@ Index
 .. toctree::
    :glob:
    
-   bge.types.*
+   Range.types.*
 

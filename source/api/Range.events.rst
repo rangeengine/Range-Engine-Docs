@@ -1,5 +1,5 @@
 
-Game Keys (bge.events)
+Game Keys (Range.events)
 ======================
 
 *****
@@ -8,56 +8,56 @@ Intro
 
 This module holds key constants for the SCA_KeyboardSensor.
 
-.. module:: bge.events
+.. module:: Range.events
 
 .. code-block:: python
 
    # Set a connected keyboard sensor to accept F1
-   import bge
+   import Range
 
-   co = bge.logic.getCurrentController()
+   co = Range.logic.getCurrentController()
    # 'Keyboard' is a keyboard sensor
    sensor = co.sensors["Keyboard"]
-   sensor.key = bge.events.F1KEY
+   sensor.key = Range.events.F1KEY
 
 .. code-block:: python
 
    # Do the all keys thing
-   import bge
+   import Range
 
-   co = bge.logic.getCurrentController()
+   co = Range.logic.getCurrentController()
    # 'Keyboard' is a keyboard sensor
    sensor = co.sensors["Keyboard"]
 
    for key, input in sensor.inputs:
-   	# key[0] == bge.events.keycode = event.type, key[1] = input
-   	if bge.logic.KX_INPUT_JUST_ACTIVATED in input.queue:
-   		if key == bge.events.WKEY:
+   	# key[0] == Range.events.keycode = event.type, key[1] = input
+   	if Range.logic.KX_INPUT_JUST_ACTIVATED in input.queue:
+   		if key == Range.events.WKEY:
    			# Activate Forward!
-   		if key == bge.events.SKEY:
+   		if key == Range.events.SKEY:
    			# Activate Backward!
-   		if key == bge.events.AKEY:
+   		if key == Range.events.AKEY:
    			# Activate Left!
-   		if key == bge.events.DKEY:
+   		if key == Range.events.DKEY:
    			# Activate Right!
 
 .. code-block:: python
 
    # The all keys thing without a keyboard sensor (but you will
    # need an always sensor with pulse mode on)
-   import bge
+   import Range
 
    # Just shortening names here
-   keyboard = bge.logic.keyboard
-   JUST_ACTIVATED = bge.logic.KX_INPUT_JUST_ACTIVATED
+   keyboard = Range.logic.keyboard
+   JUST_ACTIVATED = Range.logic.KX_INPUT_JUST_ACTIVATED
 
-   if JUST_ACTIVATED in keyboard.inputs[bge.events.WKEY].queue:
+   if JUST_ACTIVATED in keyboard.inputs[Range.events.WKEY].queue:
    	print("Activate Forward!")
-   if JUST_ACTIVATED in keyboard.inputs[bge.events.SKEY].queue:
+   if JUST_ACTIVATED in keyboard.inputs[Range.events.SKEY].queue:
    	print("Activate Backward!")
-   if JUST_ACTIVATED in keyboard.inputs[bge.events.AKEY].queue:
+   if JUST_ACTIVATED in keyboard.inputs[Range.events.AKEY].queue:
    	print("Activate Left!")
-   if JUST_ACTIVATED in keyboard.inputs[bge.events.DKEY].queue:
+   if JUST_ACTIVATED in keyboard.inputs[Range.events.DKEY].queue:
    	print("Activate Right!")
 
 
@@ -69,7 +69,7 @@ Functions
 
    Return the string name of a key event. Will raise a ValueError error if its invalid.
 
-   :arg event: key event constant from :mod:`bge.events` or the keyboard sensor.
+   :arg event: key event constant from :mod:`Range.events` or the keyboard sensor.
    :type event: int
    :rtype: string
 
@@ -78,7 +78,7 @@ Functions
    Return the string name of a key event. Returns an empty string if the event cant be represented as a character.
 
    :type event: int
-   :arg event: key event constant from :mod:`bge.events` or the keyboard sensor.
+   :arg event: key event constant from :mod:`Range.events` or the keyboard sensor.
    :type shift: bool
    :arg shift: set to true if shift is held.
    :rtype: string
@@ -575,7 +575,7 @@ Other Keys
 .. data:: RETKEY
    
    .. warning::
-      Deprecated, use :py:meth:`bge.events.ENTERKEY` instead.
+      Deprecated, use :py:meth:`Range.events.ENTERKEY` instead.
    
    :value: 7
    

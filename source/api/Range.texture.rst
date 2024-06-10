@@ -1,19 +1,19 @@
 
-Video Texture (bge.texture)
-===========================
+Video Texture (Range.texture)
+=============================
 
 ************
 Introduction
 ************
 
-The :mod:`bge.texture` module allows you to manipulate textures during the game.
+The :mod:`Range.texture` module allows you to manipulate textures during the game.
 Several sources for texture are possible: video files, image files, video capture,
 memory buffer, camera render or a mix of that.
 The video and image files can be loaded from the Internet using a URL instead of a file name.
 In addition, you can apply filters on the images before sending them to the GPU,
 allowing video effect: blue screen, color band, gray, normal map.
-:mod:`bge.texture` uses FFmpeg to load images and videos.
-All the formats and codecs that FFmpeg supports are supported by :mod:`bge.texture`,
+:mod:`Range.texture` uses FFmpeg to load images and videos.
+All the formats and codecs that FFmpeg supports are supported by :mod:`Range.texture`,
 including but not limited to:
 
 * AVI
@@ -30,7 +30,7 @@ How it works
 ------------
 
 The principle is simple: first you identify a texture on an existing object using the
-:class:`bge.texture.materialID` function, then you create a new texture with dynamic content
+:class:`Range.texture.materialID` function, then you create a new texture with dynamic content
 and swap the two textures in the GPU.
 
 The game engine is not aware of the substitution and continues to display the object as always,
@@ -42,7 +42,7 @@ When the texture object is deleted, the new texture is deleted and the old textu
 Game Preparation
 ----------------
 
-Before you can use the :mod:`bge.texture` module,
+Before you can use the :mod:`Range.texture` module,
 you must have objects with textures applied appropriately.
 
 Imagine you want to have a television showing live broadcast programs in the game.
@@ -52,12 +52,12 @@ probably you want to make it dark gray to simulate power-off state.
 When the television must be turned on, you create a dynamic texture from a video capture card
 and use it instead of ``tv.png``: the TV screen will come to life.
 
-You have two ways to define textures that :mod:`bge.texture` can grab:
+You have two ways to define textures that :mod:`Range.texture` can grab:
 
 - Simple UV texture.
 - Blender material with image texture channel.
 
-Because :mod:`bge.texture` works at texture level, it is compatible with all
+Because :mod:`Range.texture` works at texture level, it is compatible with all
 the Blender Game Engine's fancy texturing features: GLSL, multi-texture, custom shaders, etc.
 
 
@@ -70,7 +70,7 @@ Basic Video Playback
 
 Example of how to replace a texture in game with a video. It needs to run everyframe.
 
-.. literalinclude:: __/examples/bge.texture.py
+.. literalinclude:: __/examples/Range.texture.py
 
 Texture Replacement
 -------------------
@@ -79,7 +79,7 @@ Example of how to replace a texture in game with an external image.
 ``createTexture()`` and ``removeTexture()`` are to be called from a
 module Python Controller.
 
-.. literalinclude:: __/examples/bge.texture.1.py
+.. literalinclude:: __/examples/Range.texture.1.py
 	
 Video Capture with DeckLink
 ---------------------------
@@ -110,9 +110,9 @@ Window, you have selected the right pixel format and you can use the same in Ble
    It's up to you to add postprocessing to the color.
 .. note:: These shaders are compatible with 2D and 3D video stream
 
-.. literalinclude:: __/examples/bge.texture.2.py
+.. literalinclude:: __/examples/Range.texture.2.py
 
-.. module:: bge.texture
+.. module:: Range.texture
 
 *************
 Video classes
@@ -182,7 +182,7 @@ Video classes
       Set to True to activate fast nearest neighbor scaling algorithm.
       Texture width and height must be a power of 2.
       If the video picture size is not a power of 2, rescaling is required.
-      By default :mod:`bge.texture` uses the precise but slow ``gluScaleImage()`` function.
+      By default :mod:`Range.texture` uses the precise but slow ``gluScaleImage()`` function.
       Best is to rescale the video offline so that no scaling is necessary at runtime!
 
       :type: bool
@@ -476,7 +476,7 @@ Image classes
 
       :type: float list [r, g, b, a] in [0.0, 1.0]
 
-      Deprecated use :class:`bge.texture.ImageMirror.horizon` or :class:`bge.texture.ImageMirror.zenith` instead.
+      Deprecated use :class:`Range.texture.ImageMirror.horizon` or :class:`Range.texture.ImageMirror.zenith` instead.
 
    .. attribute:: updateShadow
 
@@ -724,7 +724,7 @@ Image classes
 
       :type: float list [r, g, b, a] in [0.0, 1.0]
 
-      Deprecated use :py:meth:`bge.texture.ImageRender.horizon` or :py:meth:`bge.texture.ImageRender.zenith` instead.
+      Deprecated use :py:meth:`Range.texture.ImageRender.horizon` or :py:meth:`Range.texture.ImageRender.zenith` instead.
 
    .. attribute:: updateShadow
 
@@ -798,7 +798,7 @@ Image classes
    .. attribute:: depth
 
       Use depth component of render as array of float - not suitable for texture source,
-      should only be used with bge.texture.imageToArray(mode='F').
+      should only be used with Range.texture.imageToArray(mode='F').
 
       :type: bool
 
@@ -830,7 +830,7 @@ Image classes
       in which case this function simply waits for the render operations to complete.
       When called without argument, the pixels are not extracted but the render is guaranteed
       to be completed when the function returns.
-      This only makes sense with offscreen render on texture target (see :func:`bge.render.offScreenCreate`).
+      This only makes sense with offscreen render on texture target (see :func:`Range.render.offScreenCreate`).
 
       :arg buffer: An object that implements the buffer protocol.
          If specified, the image is copied to the buffer, which must be big enough or an exception is thrown.
@@ -934,7 +934,7 @@ Image classes
    .. attribute:: depth
 
       Use depth component of viewport as array of float - not suitable for texture source,
-      should only be used with ``bge.texture.imageToArray(mode='F')``.
+      should only be used with ``Range.texture.imageToArray(mode='F')``.
 
       :type: bool
 
@@ -1043,7 +1043,7 @@ Image classes
    and represents a full HD stereo feed at 24 frame per second and 4 frames cache size.
 
    Although video format auto detection is possible with certain DeckLink devices, the corresponding
-   API is NOT implemented in the BGE. Therefore it is important to specify the format string that
+   API is NOT implemented in the Range. Therefore it is important to specify the format string that
    matches exactly the video feed. If the format is wrong, no frame will be captured.
    It should be noted that the pixel format that you need to specify is not necessarily the actual
    format in the video feed. For example, the 4K Extreme card delivers 8bit RGBs pixels in the
@@ -1191,7 +1191,7 @@ Texture classes
    Certain DeckLink devices can be used to playback video: the host sends video frames regularly
    for immediate or scheduled playback. The video feed is outputted on HDMI or SDI interfaces.
    This class supports the immediate playback mode: it has a source attribute that is assigned
-   one of the source object in the bge.texture module. Refreshing the DeckLink object causes
+   one of the source object in the Range.texture module. Refreshing the DeckLink object causes
    the image source to be computed and sent to the DeckLink device for immediate transmission
    on the output interfaces.  Keying is supported: it allows to composite the frame with an
    input video feed that transits through the DeckLink card.
@@ -1243,7 +1243,7 @@ Texture classes
    .. attribute:: right
 
       If the video format is stereo 3D, this attribute should be set to an image source object
-      that will produce the right eye images.  If the goal is to render the BGE scene in 3D,
+      that will produce the right eye images.  If the goal is to render the Range scene in 3D,
       it can be achieved with 2 cameras, one for each eye, used by 2 ImageRender with an offscreen
       render buffer that is just the size of the video frame.
 
@@ -1305,7 +1305,7 @@ Texture classes
          DeckLink object if it is known that the image source has not changed.
       :type refresh_source: bool
       :arg ts: The timestamp value passed to the image source object to compute the image.
-         If unspecified, the BGE clock is used.
+         If unspecified, the Range clock is used.
       :type ts: float
 
 
@@ -1486,9 +1486,9 @@ Functions
 
 .. function:: getLastError()
 
-   Last error that occurred in a bge.texture function.
+   Last error that occurred in a Range.texture function.
 
-   :return: The description of the last error occurred in a bge.texture function.
+   :return: The description of the last error occurred in a Range.texture function.
    :rtype: str
 
 .. function:: imageToArray(image, mode)
@@ -1544,7 +1544,7 @@ Functions
    If the object has no material that matches name, it generates a runtime error.
    Use try/except to catch the exception.
 
-   Ex: ``bge.texture.materialID(obj, 'IMvideo.png')``
+   Ex: ``Range.texture.materialID(obj, 'IMvideo.png')``
 
    :arg object: The game object that uses the texture you want to make dynamic.
    :type object: :class:`KX_GameObject`

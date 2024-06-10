@@ -1,12 +1,12 @@
 
-Rasterizer (bge.render)
+Rasterizer (Range.render)
 =======================
 
 *****
 Intro
 *****
 
-.. module:: bge.render
+.. module:: Range.render
 
 Example of using a :class:`SCA_MouseSensor`,
 and two :class:`KX_ObjectActuator` to implement MouseLook:
@@ -18,12 +18,12 @@ and two :class:`KX_ObjectActuator` to implement MouseLook:
 
    # To use a mouse movement sensor "Mouse" and a
    # motion actuator to mouse look:
-   import bge
+   import Range
 
    # scale sets the speed of motion
    scale = 1.0, 0.5
 
-   co = bge.logic.getCurrentController()
+   co = Range.logic.getCurrentController()
    obj = co.owner
    mouse = co.sensors["Mouse"]
    lmotion = co.actuators["LMove"]
@@ -31,8 +31,8 @@ and two :class:`KX_ObjectActuator` to implement MouseLook:
 
    # Transform the mouse coordinates to see how far the mouse has moved.
    def mousePos():
-      x = (bge.render.getWindowWidth() / 2 - mouse.position[0]) * scale[0]
-      y = (bge.render.getWindowHeight() / 2 - mouse.position[1]) * scale[1]
+      x = (Range.render.getWindowWidth() / 2 - mouse.position[0]) * scale[0]
+      y = (Range.render.getWindowHeight() / 2 - mouse.position[1]) * scale[1]
       return (x, y)
 
    pos = mousePos()
@@ -50,7 +50,7 @@ and two :class:`KX_ObjectActuator` to implement MouseLook:
    co.activate(wmotion)
 
    # Centre the mouse
-   bge.render.setMousePosition(int(bge.render.getWindowWidth() / 2), int(bge.render.getWindowHeight() / 2))
+   Range.render.setMousePosition(int(Range.render.getWindowWidth() / 2), int(Range.render.getWindowHeight() / 2))
    
 *********
 Functions
