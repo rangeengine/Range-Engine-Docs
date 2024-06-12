@@ -18,9 +18,9 @@ base class --- :class:`SCA_IObject`
 
    .. code-block:: python
 
-        import bge
+        import Range
 
-        class CustomGameObject(bge.types.KX_GameObject):
+        class CustomGameObject(Range.types.KX_GameObject):
             RATE = 0.05
 
             def __init__(self, old_owner):

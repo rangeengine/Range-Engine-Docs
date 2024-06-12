@@ -1,6 +1,6 @@
 
 Game Types (Range.types)
-======================
+========================
 
 .. module:: Range.types
 
@@ -153,7 +153,7 @@ Blender Data
    * :class:`KX_Scene`
    * :class:`KX_WorldInfo`
 
-.. _Range-types-upRange-data:
+.. _Range-types-Range-data:
 
 ==========
 RanGE Data
@@ -188,9 +188,10 @@ RanGE Data
    * :class:`KX_VehicleWrapper`
    * :class:`SCA_IObject`
    * :class:`SCA_InputEvent`
-   * :class:`SCA_PythonJoystick`
-   * :class:`SCA_PythonKeyboard`
-   * :class:`SCA_PythonMouse`
+   * :class:`KX_PythonJoystick`
+   * :class:`KX_PythonKeyboard`
+   * :class:`KX_PythonMouse`
+   * :class:`KX_InputSystem`
 
 *****
 Index

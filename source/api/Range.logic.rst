@@ -1,6 +1,6 @@
 
 Game Logic (Range.logic)
-======================
+========================
 
 ************
 Introduction
@@ -82,17 +82,21 @@ Variables
 
 .. data:: keyboard
 
-   The current keyboard wrapped in an :class:`SCA_PythonKeyboard` object.
+   The current keyboard wrapped in an :class:`KX_PythonKeyboard` object.
 
 .. data:: mouse
 
-   The current mouse wrapped in an :class:`SCA_PythonMouse` object.
+   The current mouse wrapped in an :class:`KX_PythonMouse` object.
 
 .. data:: joysticks
 
-   A list of attached :class:`SCA_PythonJoystick`.
+   A list of attached :class:`KX_PythonJoystick`.
    The list size is the maximum number of supported joysticks.
    If no joystick is available for a given slot, the slot is set to None.
+
+.. data:: inputSystem
+
+   The current input system wrapped in an :class:`KX_InputSystem` object.
 
 *****************
 General functions

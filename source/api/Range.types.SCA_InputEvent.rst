@@ -35,10 +35,10 @@ base class --- :class:`EXP_PyObjectPlus`
 
       .. code-block:: python
 
-         import bge
+         import Range
 
-         x = bge.logic.mouse.inputs[bge.events.MOUSEX].values[-1]
-         y = bge.logic.mouse.inputs[bge.events.MOUSEY].values[-1]
+         x = Range.logic.mouse.inputs[bge.events.MOUSEX].values[-1]
+         y = Range.logic.mouse.inputs[bge.events.MOUSEY].values[-1]
 
          print("Mouse non-normalized position: x: {0}, y: {1}".format(x, y))
 

@@ -1,9 +1,9 @@
-SCA_PythonJoystick(EXP_PyObjectPlus)
+KX_PythonJoystick(EXP_PyObjectPlus)
 ====================================
 
 base class --- :class:`EXP_PyObjectPlus`
 
-.. class:: SCA_PythonJoystick(EXP_PyObjectPlus)
+.. class:: KX_PythonJoystick(EXP_PyObjectPlus)
 
    A Python interface to a joystick.
 

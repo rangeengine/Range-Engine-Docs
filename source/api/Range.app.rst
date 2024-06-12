@@ -1,6 +1,6 @@
 
 Application Data (Range.app)
-==========================
+============================
 
 Module to access application values that remain unchanged during runtime.
 
@@ -44,7 +44,7 @@ Module to access application values that remain unchanged during runtime.
 
    :type: str
 
-.. data:: upRange_version
+.. data:: Range_version
 
    The UPRange version as a tuple of 3 ints, eg. (0, 2, 3).
 
@@ -53,7 +53,7 @@ Module to access application values that remain unchanged during runtime.
 
    :type: tuple of three ints
 
-.. data:: upRange_version_string
+.. data:: Range_version_string
 
    The UPRange version formatted as a string, eg. "0.2 (sub 3)".
 

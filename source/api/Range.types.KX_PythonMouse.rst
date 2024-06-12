@@ -1,9 +1,9 @@
-SCA_PythonMouse(EXP_PyObjectPlus)
+KX_PythonMouse(EXP_PyObjectPlus)
 =================================
 
 base class --- :class:`EXP_PyObjectPlus`
 
-.. class:: SCA_PythonMouse(EXP_PyObjectPlus)
+.. class:: KX_PythonMouse(EXP_PyObjectPlus)
 
    The current mouse.
 
