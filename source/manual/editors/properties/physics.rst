@@ -43,6 +43,7 @@ Do this again for y and z, then make a rectangular prism out of these values, an
 This box could be oriented relative globally to the world or locally to the object's rotation.
 
 .. figure:: /images/editors-properties-physics-rigid_body-bounding_box.png
+   :width: 500px
 
    Demonstration of a Local Bounding Box (left) and a Global Bounding Box (right).
 
@@ -53,7 +54,7 @@ the default :kbd:`Shift-Ctrl-Alt-C`, :kbd:`3` or :menuselection:`Set Origin --> 
 is unlikely to get the desired placement of the Collision Bounds that you want.
 Instead, you should generally set the origin by looking at the Tool Shelf after you do the *Set Origin*,
 and changing the *Center* from *Median Center* to *Bounds Center*.
-Blender will remember this change for future :kbd:`Shift-Ctrl-Alt-C` executions.
+RanGE will remember this change for future :kbd:`Shift-Ctrl-Alt-C` executions.
 
 All Collision Bounds are centered on this origin. All boxes are oriented locally, so object rotation matters.
 
@@ -62,7 +63,7 @@ All Collision Bounds are centered on this origin. All boxes are oriented locally
    Setting the origin to Bounds Center instead of Median Center.
 
 A final introductory comment: When you set the Collision Bounds on an object,
-Blender will attempt to display a visualization of the bounds in the form of a dotted outline.
+RanGE will attempt to display a visualization of the bounds in the form of a dotted outline.
 Currently, there is a bug: *The 3D View*
 does not display this bounds preview where it actually will be during the game.
 To see it, go to :menuselection:`Game --> Show Physics Visualization`
@@ -93,7 +94,7 @@ Convex Hull
    Forms a shrink-wrapped, simplified geometry around the object.
 
    .. figure:: /images/editors-properties-physics-rigid_body-convex_hull.png
-      :width: 200px
+      :width: 500px
 
       A convex hull sketch.
 
@@ -109,7 +110,6 @@ By Hand
    with the efficiency of some of the others. See the demo of this in the dune buggy to the right.
 
    .. figure:: /images/editors-properties-physics-rigid_body-manual_hull.png
-      :width: 300px
 
       Another way to create Collision Bounds -- By hand.
 

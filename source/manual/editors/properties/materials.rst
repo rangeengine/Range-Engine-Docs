@@ -8,10 +8,10 @@ Game Settings
 
 .. figure:: /images/editors-properties-materials-game_settings.png
 
-   Game Settings panel.
+   Game Settings panel. `Video <https://www.youtube.com/watch?v=z8_PzIYJ5QQ>`__
 
 This panel contains properties that control how the object surfaces
-that use the material are rendered in real-time by the Blender Game Engine.
+that use the material are rendered in real-time by the Range Engine.
 
 Backface Cull
    Hide the back-faces of objects rendered with this material.
@@ -57,3 +57,15 @@ of faces to which the material is applied.
    Normal (default)
       No transformation.
 
+Foliage Shader
+================
+The **foliage shader** is a specialized type of shader used to render plant materials like leaves, grass, and trees. It simulates wind animation, helping to create more lifelike vegetation in games.
+
+   Foliage Strength:
+      How much the Object will move from its original position
+
+   Foliage Turbulence:
+      Motion cycle speed
+
+   Foliage Randomizer:
+      How much the object will be distorted in the movement

@@ -57,10 +57,8 @@ This manual refers to mouse buttons as:
 Contribute
 ==========
 
-The UPBGE Manual is a community driven effort to which anyone can contribute.
+The RanGE Manual is a community driven effort to which anyone can contribute.
 Either if you found a typo or if you want to improve the general quality of the documentation,
 there are several options for helping out. You can:
 
-#. Fix problems, improve the documentation and write new sections. Make a Pull Request with the proposed changes in `UPBGE Docs project <https://github.com/UPBGE/UPBGE-Docs>`__.
-#. `Report problems <https://github.com/UPBGE/UPBGE-Docs/issues>`__ in the documentation.
-#. Get involved in discussions through the `IRC channel <https://webchat.freenode.net/>`__ at "upbgecoders" channel.
+#. Fix problems, improve the documentation and write new sections. Make a Pull Request with the proposed changes in `RanGE Docs project <https://github.com/rangeengine/Range-Engine-Docs>`__.

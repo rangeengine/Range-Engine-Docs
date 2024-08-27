@@ -11,8 +11,8 @@ Object
    
    Supported object types in Add menu.
 
-UPBGE supports several object types from Blender, as listed below. The unsupported object 
-types (like Curve, Metaball, Lattice, etc) can be present at Blender scene, but will be 
+RanGE supports several object types from Blender, as listed below. The unsupported object 
+types (like Curve, Lattice, etc) can be present at Blender scene, but will be 
 removed automatically at game start, so they should not be taken in account in game 
 development process.
 

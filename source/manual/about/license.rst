@@ -39,14 +39,12 @@ also base on others manuals and articles whose authors are exposed below:
 
 .. parsed-literal::
 
-   The |UPBGE_VER_MANUAL|_
-   by the `UPBGE Documentation Team <https://github.com/UPBGE/UPBGE-Docs#credits>`__
-   is licensed under a |UPBGE_LICENSE|_.
+   The RanGE
+   by the `RanGE Documentation Team <https://github.com/rangeengine/Range-Engine-Docs>`__
+   is licensed under a |RanGE_LICENSE|_.
 
-.. |UPBGE_VER_MANUAL| replace:: UPBGE Manual
-.. _UPBGE_VER_MANUAL: https://upbge-docs.readthedocs.io/en/latest/index.html
-.. |UPBGE_LICENSE| replace:: CC-BY-SA v4.0
-.. _UPBGE_LICENSE: https://creativecommons.org/licenses/by-sa/4.0/
+.. |RanGE_LICENSE| replace:: CC-BY-SA v4.0
+.. _RanGE_LICENSE: https://creativecommons.org/licenses/by-sa/4.0/
 
 If you want to use the Range Engine Manual in other sites or other formats, please attribute 
 the different authors and include hyperlinks (online) or URLs (in print) to the different 

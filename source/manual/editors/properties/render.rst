@@ -8,12 +8,12 @@ options related to game screen rendering.
 
 Some of the options showed here may behave differently according to the conditions, as 
 there are two separate game "players" for previewing the game during development. Note 
-that while UPBGE is running in either player, the computer's mouse and keyboard 
+that while RanGE is running in either player, the computer's mouse and keyboard 
 are captured by the game and by default, the mouse cursor is not visible (this can be 
 changed in the :ref:`Display panel <editors-properties-render-display>` of this tab). 
 To exit the game, press the :kbd:`Esc` key.
 
-.. note:: Make sure that the render engine is set to **UPBGE** when attempting to set these 
+.. note:: Make sure that the render engine is set to **Range Engine** when attempting to set these 
    controls, otherwise this description will not apply to what you see!
 
 In **Render** tab, there are several panels available, as shown. Each one can be expanded 
@@ -30,8 +30,8 @@ Embedded Player
    Embedded Player panel.
 
 This panel provides information for the **Embedded Player** which allows games to be run
-inside the Blender **3D View**. The **Embedded Player** renders onto the **3D View** 
-editor in the Blender GUI using the current perspective and zoom level of the **3D View**.
+inside the RanGE **3D View**. The **Embedded Player** renders onto the **3D View** 
+editor in the RanGE GUI using the current perspective and zoom level of the **3D View**.
 
 Note that the *Resolution* settings are independent of the size of the viewport preview 
 pane. In fact, the *Resolution* controls seem to have no effect at all. The resolution 
@@ -40,7 +40,7 @@ which behaves much like the *Extend* framing mode for the
 :ref:`Standalone Player<editors-properties-render-standalone-player>`.
 
 Start
-   Starts UPBGE inside the current Blender **3D View**. Shortcut :kbd:`P` while mouse 
+   Starts RanGE inside the current **3D View**. Shortcut :kbd:`P` while mouse 
    hovers the desired **3D View**.
    
 Resolution X/Y
@@ -56,8 +56,7 @@ Standalone Player
    Standalone Player panel.
 
 This panel provides information for the **Standalone Player** which allows games to be 
-run without Blender. See :doc:`Standalone Player </manual/release/blender_player>` for 
-further details.
+run without RanGE.
 
 The **Standalone Player** renders the scene from the perspective of the active scene 
 camera and either creates a new desktop window or switches into fullscreen rendering mode. 
@@ -187,11 +186,11 @@ System
 
 The **System** panel at the Render tab lets the game developer specify options about 
 the system performance regarding to frame discard and restrictions about frame rendering, 
-the key to stop UPBGE, etc.
+the key to stop RanGE, etc.
 
 Use Frame Rate
    Respect the frame rate rather than rendering as many frames as possible. When 
-   unchecked, this will inform Blender to run freely without frame rate restrictions. 
+   unchecked, this will inform RanGE to run freely without frame rate restrictions. 
    The frame rate is specified at the **Display** panel, also in the **Render** tab. For 
    more information about frame rates, see 
    :ref:`Display panel <editors-properties-render-display>`.
@@ -231,7 +230,7 @@ Animation Frame Rate
 Restrict Animation Updates
    Restrict number of animation updates to the animation FPS. This is better for 
    performance, but can cause issues with smooth playback. When checked, this will force 
-   UPBGE to discard frames (even at the middle of redrawing, sometimes causing tearing 
+   RanGE to discard frames (even at the middle of redrawing, sometimes causing tearing 
    artifacts) if the rate of frames rendered by the GPU is greater than the specified on 
    :ref:`Display panel <editors-properties-render-display>`.
    
@@ -292,12 +291,12 @@ Debug
 
    Debug panel at the Render tab.
 
-The **Debug** panel at the **Render** tab toggles various specific debug helpers on UPBGE, 
+The **Debug** panel at the **Render** tab toggles various specific debug helpers on RanGE, 
 from frame rate being showed on the screen to detailed physics visualization of specific 
 elements, like armatures and camera frustum.
 
 Framerate and Profile
-   When checked, this will show values for each of the calculations Blender is doing 
+   When checked, this will show values for each of the calculations RanGE is doing 
    while the game is running on the top left of the screen.
    
 Render Queries
@@ -334,9 +333,8 @@ Shadow Frustum
 Bake
 ====
 
-The **Bake** panel in the **Render** tab is very similar to its **Blender Render** 
-counterpart and serves much the same purpose. See 
-`Render Baking <https://docs.blender.org/manual/en/dev/render/blender_render/bake.html>`__ 
+The **Bake** panel in the **Render** tab is very similar to its **RanGE Render** 
+counterpart and serves much the same purpose.
 for further details.
 
 .. figure:: /images/editors-properties-render-bake.png
@@ -437,10 +435,10 @@ Selected to Active
    Bake shading on the surface of selected objects to the active object.
 
    Distance
-      Maximum distance in blender units from active object to other object.
+      Maximum distance in RanGE units from active object to other object.
       
    Bias
-      Bias in blender units toward faces further away from the object.
+      Bias in RanGE units toward faces further away from the object.
       
 Split
    The method used to split a quad into two triangles for baking.

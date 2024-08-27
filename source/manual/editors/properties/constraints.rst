@@ -6,7 +6,7 @@ Constraints
 The **Constraints** tab in **Properties** editor exposes constraints setups for current 
 object.
 
-Currently in UPBGE only the *Rigid Body Joint* constraint can be set through the user 
+Currently in RANGE ENGINE only the *Rigid Body Joint* constraint can be set through the user 
 interface. 
 
 ===========================
@@ -14,7 +14,7 @@ Rigid Body Joint Constraint
 ===========================
 
 The *Rigid Body Joint* constraint is very special, it is used by the physics part of
-UPBGE to simulate a joint between its owner and its target. It offers four joint types: 
+RANGE ENGINE to simulate a joint between its owner and its target. It offers four joint types: 
 hinge type, ball-and-socket type, cone-twist type, and generic six-\ :abbr:`DoF (Degrees 
 of Freedom)` type.
 
@@ -72,7 +72,7 @@ Pivot Type
       Limits
          .. figure:: /images/editors-properties-constraints-rigid_body_joint-generic_6_dof.png
          
-         Linear and angular limits for a given axis (of the pivot) in Blender Units and 
+         Linear and angular limits for a given axis (of the pivot) in RanGE Units and 
          degrees respectively.
 
 Child Object
@@ -81,7 +81,7 @@ Child Object
 
 Linked Collision
    When enabled, this will disable the collision detection between the owner and the 
-   target (in the physical engine of the BGE).
+   target (in the physical engine of the RanGE).
 
 Display Pivot
    When enabled, this will draw the pivot of the joint in the 3D Views. The most useful, 

@@ -42,6 +42,15 @@ Exposure
 Range
    The color range that will be mapped to 0-1.
 
+Sun Size
+   Control the Sun size.
+
+Sun Turbidity
+   Atmospheric turbidity.
+
+Ground Color
+   Distance to ground.
+
 Environment Lighting
 ======================
 
@@ -77,7 +86,7 @@ Mist
    World tab's Mist panel.
 
 *Mist* can greatly enhance the illusion of depth in your rendering. To create *Mist*, 
-UPBGE makes objects farther away more transparent (decreasing their Alpha value) so that 
+RanGE makes objects farther away more transparent (decreasing their Alpha value) so that 
 they mix more of the background color with the object color. With *Mist* enabled, the 
 further the object is away from the camera the less its alpha value will be.
 

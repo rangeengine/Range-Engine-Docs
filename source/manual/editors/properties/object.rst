@@ -9,10 +9,7 @@ Object
 
 The **Object** tab from :doc:`Properties Editor </manual/editors/properties/index>` 
 exposes settings and properties related to the current object. These properties and 
-settings can be position, rotation, level of detail, group options and so on. For more 
-detailed info about this tab, see 
-`Object properties <https://docs.blender.org/manual/en/dev/editors/3dview/object/properties/index.html>`__ 
-in Blender Manual.
+settings can be position, rotation, level of detail, group options and so on.
 
 .. _editors-properties-object-object_name:
 
@@ -24,9 +21,9 @@ Name
    Object's name field in Object tab.
    
 The object's name will identify the object in most cases, specially in fields inside the 
-Blender editors. In UPBGE, if two identical objects are added in game (for example, with 
+RanGE editors. In RanGE, if two identical objects are added in game (for example, with 
 an Add Object logic or instanced through a group), both objects will have the same name, 
-differently from Blender which appends a number in a repeating object, so be aware that 
+differently from RanGE which appends a number in a repeating object, so be aware that 
 retrieving an object through its name may not work sometimes. 
 Prefer using **Game Properties**, instead.
 
@@ -43,7 +40,7 @@ Predefined Bound
 Activity Culling
 ================
 
-UPBGE's **Activity Culling** feature allows to disable object's physics and logic based 
+RanGE **Activity Culling** feature allows to disable object's physics and logic based 
 on the distance to the nearest camera. This allows better performance by not processing 
 objects which are too far away.
 
@@ -76,6 +73,9 @@ objects can be viewed both up close and from a distance.
 
 Distance Factor
    The factor applied to distance computed in LoD.
+
+Physics Update
+   Update LOD physics shape in the same time than render shape.
    
 Add
    Add a level of detail to this object
@@ -110,8 +110,6 @@ Generate
    modifier to allow further changing the settings. Generated objects are automatically 
    named based on the level they are generated for. Below are some settings for the 
    operator.
-   
-   .. figure:: /images/editors-properties-object-levels_of_detail-generation.png
 
    Count
       The number of levels desired after generation. This operator creates Count-1 new 
@@ -139,7 +137,7 @@ Settings
 .. figure:: /images/editors-properties-object-levels_of_detail-settings.png
 
 Level of detail settings can be found in the Object settings when the renderer is set to
-Blender Game. In the Levels of Detail panel is a button to add a new level of detail to 
+RanGE Game. In the Levels of Detail panel is a button to add a new level of detail to 
 the current object. The settings for each level of detail are displayed in its own box. 
 The exception to this is the base level of detail. This is automatically setup as the 
 current object with a distance setting of 0. To remove a level of detail, click on the X 
@@ -161,6 +159,26 @@ Use Material
 
 .. _editors-properties-object-transforms:
 
+Animation Events
+============================
+
+.. figure:: /images/editors-properties-object-Animation_Events.png
+
+      Manipulation of events during the playback of animations
+
+The **Animation Events** feature is very useful for helping define events based on the animation of an object. This feature was implemented in version X of the RanGE. In the **Animation Events** panel, we have:
+
+Action 
+   Where you choose the animation that will define triggers to execute actions programmed by the user.
+
+Triggers 
+   Located just below Action, where you can add several triggers that will be used as a reference to execute the action.
+
+Python Event 
+   If you wish to program the actions of Animation Events in Python, you will use this section to input the directory of your Python script and the event name (function).
+
+More information about `Animation Events <https://rangeengine.tech/api/15/html/api/bge.types.KX_AnimationEvent.html>`__ including properties, methods, and usage examples.
+
 Transform and Delta Transform
 =============================
 
@@ -172,11 +190,9 @@ The **Transform** panel exposes the position, rotation and scale properties of t
 object, and the **Delta Transform** panel increments additional transformation values 
 to **Transform** values. Note that these properties behave according to the 
 object's parent transform properties. However, this explanation is just a base to 
-understand how the transformation values work in UPBGE. More info about the **Transform** 
-panel can be found at 
-`Transform Properties <https://docs.blender.org/manual/en/dev/editors/3dview/object/properties/transforms.html>`__.
+understand how the transformation values work in RanGE.
 
-In UPBGE there are two types of transformation values for the object: the *World* and 
+In RanGE there are two types of transformation values for the object: the *World* and 
 the *Local* properties. The *World* values are the transformation values relative to the 
 center of the world, and the *Local* values are the transformation values relative to the 
 object's parent object. For example: 
@@ -198,24 +214,19 @@ Relations
 
 .. figure:: /images/editors-properties-object-relations.png
 
-Exposes values of relations of current object to other objects, scene, etc. For detailed 
-info about object relations, see 
-`Object Relations <https://docs.blender.org/manual/en/dev/editors/3dview/object/properties/relations/index.html>`__.
+Exposes values of relations of current object to other objects, scene, etc.
 
 Layers
    The layers which the object is on the scene, multiple can be selected. The behavior is
-   similar to Blender's layers, as layers can keep the object hidden / shown or some 
+   similar to RanGE's layers, as layers can keep the object hidden / shown or some 
    actions can be applied only to objects in a specific layer (as lamps and shadows). 
-   Also, only objects in hidden layers can be added through logic. Detailed info about 
-   layers can be found at 
-   `Layers <https://docs.blender.org/manual/en/dev/editors/3dview/object/properties/relations/layers.html>`__.
+   Also, only objects in hidden layers can be added through logic.
    
 Parent
    The parent object of the current one. While the current object have a parent, its 
    transformation values will be inherited from the parent. A parent may have multiple 
    children, but the reverse is not true. The parenting behavior changes according to 
-   the selected mode in dropdown menu. Detailed info about parenting can be found at 
-   `Parenting Objects <https://docs.blender.org/manual/en/dev/editors/3dview/object/properties/relations/parents.html>`__.
+   the selected mode in dropdown menu.
 
 .. _editors-properties-object-relations_extras:
 
@@ -224,9 +235,7 @@ Relations Extras
 
 .. figure:: /images/editors-properties-object-relations_extras.png
 
-Exposes some extra settings about object's relationship. Detailed info about relations 
-extras can be found at 
-`Relations Extras <https://docs.blender.org/manual/en/dev/editors/3dview/object/properties/relations/extras.html>`__.
+Exposes some extra settings about object's relationship.
 
 Slow Parent
    Creates a delay in parent relationship. Useful to easily smooth movement for character 
@@ -242,26 +251,23 @@ Groups
 
 .. figure:: /images/editors-properties-object-groups.png
 
-Groups have multiple uses in Blender, but in UPBGE its main use is to allow creating 
+Groups have multiple uses in RanGE, but the main use is to allow creating 
 maintainable libraries for games through the use of 
 :ref:`dupli group instances <editors-properties-object-duplication>`.
 Once one or several objects are added to a group, instances of this group can be added to 
 the scene, and editing the original objects edits all the instances automatically in 
-Blender. Detailed info about groups can be found at 
-`Groups <https://docs.blender.org/manual/en/dev/editors/3dview/object/properties/relations/groups.html>`__.
+RanGE.
 
 .. _editors-properties-object-display:
 
-Display
+Viewport Display
 =======
 
 .. figure:: /images/editors-properties-object-display.png
 
-These settings (except for *Object Color*) don't affect the current object in UPBGE, only 
+These settings (except for *Object Color*) don't affect the current object in RanGE, only 
 does in **3D Viewport**. The exception, *Object Color*, can be used in game as value in 
-material nodes, Python and material's *Object Color* option. Detailed info about the 
-**Display** panel can be found at 
-`Display <https://docs.blender.org/manual/en/dev/editors/3dview/object/properties/display.html>`__.
+material nodes, Python and material's *Object Color* option.
 
 .. _editors-properties-object-duplication:
 
@@ -270,11 +276,9 @@ Duplication
 
 .. figure:: /images/editors-properties-object-duplication.png
 
-Exposes several duplication modes, but the useful one in UPBGE is *Group*. When a group 
+Exposes several duplication modes, but the useful one in RanGE is *Group*. When a group 
 is selected in the dropdown menu, a group is instanced in the current object. By default, 
 only empties are used in order to instance groups, but any kind of object can do it as 
-well. More about dupli group instances uses in UPBGE on 
-:ref:`Groups <editors-properties-object-groups>`. Detailed info about the 
-dupli group feature can be found at 
-`DupliGroup <https://docs.blender.org/manual/en/dev/editors/3dview/object/properties/duplication/dupligroup.html>`__.
+well. More about dupli group instances uses in RanGE on 
+:ref:`Groups <editors-properties-object-groups>`.
 

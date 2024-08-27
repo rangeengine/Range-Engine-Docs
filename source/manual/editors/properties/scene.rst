@@ -14,7 +14,7 @@ Physics
    Scene tab's Physics panel.
 
 The *Physics* panel located in the *Scene* tab determine the type of physical rules 
-that govern the current UPBGE scene, the gravity value to be used and some other options.
+that govern the current RanGE scene, the gravity value to be used and some other options.
 
 Physics Engine
    Set the type of physics engine to use.
@@ -46,7 +46,7 @@ Physics Solver
 Gravity
    The gravitational acceleration, m.s\ :sup:`-2` (in units of meters per squared 
    second), of this world. Each object that is an actor has a mass and size slider. In 
-   conjunction with the frame rate, Blender uses this info to calculate how fast the 
+   conjunction with the frame rate, RanGE uses this info to calculate how fast the 
    object should accelerate downward.
    
 Physics Steps
@@ -110,7 +110,7 @@ Obstacle Simulation
 
    Scene tab's Obstacle Simulation panel.
 
-Simulation used for obstacle avoidance in UPBGE, based on the RVO (Reciprocal Velocity 
+Simulation used for obstacle avoidance in RanGE, based on the RVO (Reciprocal Velocity 
 Obstacles) principle. The aim is to prevent one or more actors colliding with obstacles.
 
 Type
@@ -231,6 +231,9 @@ Camera
    Used to select which camera is used as the active camera. You can also set the active 
    camera in the 3D View with :kbd:`Ctrl-0`.
 
+World Sun:
+   Define the world’s Sun in the current scene.
+
 .. _scene-background-set:
 
 Background
@@ -268,7 +271,7 @@ Unit Presets
    
 Length
    None
-      Uses Blender Units.
+      Uses RanGE Units.
       
    Metric, Imperial
       Standard unit of measurement for lengths.
@@ -283,7 +286,7 @@ Angle
       When you are using *Degrees*, the radian value is also displayed in the tooltip.
 
 Unit Scale
-   Scale factor to use when converting between Blender Units and *Metric*/*Imperial*.
+   Scale factor to use when converting between RanGE Units and *Metric*/*Imperial*.
 
    .. tip::
 
@@ -358,6 +361,4 @@ Separate Units
      - ``km``
      - 1000.0
      
-.. note:: The **Audio** panel settings in **Scene** tab don't have effect in UPBGE. 
-   For audio settings, see 
-   `User Preferences <https://docs.blender.org/manual/en/dev/preferences/system.html>`__.
+.. note:: The **Audio** panel settings in **Scene** tab don't have effect in RanGE.

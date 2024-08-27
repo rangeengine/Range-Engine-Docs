@@ -23,7 +23,7 @@ in the :doc:`Sensor Editing </manual/logic/sensors/editing>` page.
 Common Options
 ==============
 
-.. figure:: /images/logic-sensors-common_options-column3.jpg
+.. figure:: /images/logic-sensors-common_options-column3.png
 
    Common Sensor options.
 
