@@ -119,16 +119,16 @@ Device
       The overall volume of the device.
 
 
-Factory
+Sound
 -------
 
-.. class:: Factory
+.. class:: Sound
 
-   Factory objects are immutable and represent a sound that can be played simultaneously multiple times. They are called factories because they create reader objects internally that are used for playback.
+   Sound objects are immutable and represent a sound that can be played simultaneously multiple times. They are called factories because they create reader objects internally that are used for playback.
 
    .. function:: file(filename)
    
-   Creates a factory object of a sound file.
+   Creates a sound object of a sound file.
    
    :arg filename: Path of the file.
    :type filename: string
@@ -581,3 +581,17 @@ Constants
 .. data:: AUD_STATUS_STOPPED
 
    constant value 3
+
+.. _aud-sound-effects:
+
+-----------------------
+Constants Audio Effects
+-----------------------
+
+.. data:: AUDIO_EFFECT_INVALID
+
+   constant value 0
+
+.. data:: AUDIO_EFFECT_REVERB
+
+   constant value 1
