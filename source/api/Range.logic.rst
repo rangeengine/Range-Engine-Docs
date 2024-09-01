@@ -161,24 +161,24 @@ General functions
 
    Restarts the current game by reloading the .blend file (the last saved version, not what is currently running).
    
-.. function:: LibLoad(blend, type, data, load_actions=False, verbose=False, load_scripts=True, async=False, scene=None)
+.. function:: LibLoad(path, group, buffer, load_actions=False, verbose=False, load_scripts=True, asynchronous=False, scene=None)
    
    Converts the all of the datablocks of the given type from the given blend.
    
-   :arg blend: The path to the blend file (or the name to use for the library if data is supplied)
-   :type blend: string
-   :arg type: The datablock type (currently only "Action", "Mesh" and "Scene" are supported)
-   :type type: string
-   :arg data: Binary data from a blend file (optional)
-   :type data: bytes
+   :arg path: The path to the range file (or the name to use for the library if data is supplied)
+   :type path: string
+   :arg group: The datablock type (currently only "Action", "Mesh" and "Scene" are supported)
+   :type group: string
+   :arg buffer: Binary data from a range file (optional)
+   :type buffer: bytes
    :arg load_actions: Search for and load all actions in a given Scene and not just the "active" actions (Scene type only)
    :type load_actions: bool
    :arg verbose: Whether or not to print debugging information (e.g., "SceneName: Scene")
    :type verbose: bool
    :arg load_scripts: Whether or not to load text datablocks as well (can be disabled for some extra security)
    :type load_scripts: bool   
-   :arg async: Whether or not to do the loading asynchronously (in another thread). Only the "Scene" type is currently supported for this feature.
-   :type async: bool
+   :arg asynchronous: Whether or not to do the loading asynchronously (in another thread). Only the "Scene" type is currently supported for this feature.
+   :type asynchronous: bool
    :arg scene: Scene to merge loaded data to, if `None` use the current scene.
    :type scene: :class:`KX_Scene` or string
    
