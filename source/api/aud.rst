@@ -595,3 +595,25 @@ Constants Audio Effects
 .. data:: AUDIO_EFFECT_REVERB
 
    constant value 1
+
+.. _aud-sound-filter:
+
+------------------------------
+Constants Audio Filter Effects
+------------------------------
+
+.. data:: AUDIO_FILTER_INVALID
+
+   constant value 0
+
+.. data:: AUDIO_FILTER_LOWPASS
+
+   constant value 1
+
+.. data:: AUDIO_FILTER_HIGHPASS
+
+   constant value 2
+
+.. data:: AUDIO_FILTER_BANDPASS
+
+   constant value 3

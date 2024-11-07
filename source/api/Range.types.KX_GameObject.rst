@@ -619,20 +619,18 @@ base class --- :class:`SCA_IObject`
    .. method:: alignAxisToVect(vect, axis=2, factor=1.0)
 
       Aligns any of the game object's axis along the given vector.
-      
-      (Deprecated method, use lookAt() instead)
 
-   .. warning::
-      Deprecated, use :py:meth:`lookAt` instead.
+      .. warning::
+         Deprecated, use :py:meth:`lookAt` instead.
 
    .. method:: lookAt(vect, axis=2, factor=1.0)
 
-   Aligns any of the game object's axis along the given vector.
+      Aligns any of the game object's axis along the given vector.
 
 
-   :arg vect: a vector to align the axis.
-   :type vect: 3D vector
-   :arg axis: The axis you want to align
+      :arg vect: a vector to align the axis.
+      :type vect: 3D vector
+      :arg axis: The axis you want to align
 
       * 0: X axis
       * 1: Y axis
@@ -900,6 +898,25 @@ base class --- :class:`SCA_IObject`
    .. method:: removeParent()
 
       Removes this objects parent.
+
+   .. method:: getBoundBoxVolume()
+
+      Returns the object's volume and AABB points.
+
+      :rtype: 3-tuple (float, 3-tuple (x, y, z), 3-tuple (x, y, z), 3-tuple (x, y, z), 3-tuple (x, y, z), 3-tuple (x, y, z), 3-tuple (x, y, z), 3-tuple (x, y, z), 3-tuple (x, y, z))
+
+      :value 0: The volume of the object
+      :value 1: Vector(AABB min)
+      :value 2: Vector(AABB max)
+
+      If you need the other points, it's already calculated from AABB Box.
+
+      :value 3: Vector(AABB point 3)
+      :value 4: Vector(AABB point 4)
+      :value 5: Vector(AABB point 5)
+      :value 6: Vector(AABB point 6)
+      :value 7: Vector(AABB point 7)
+      :value 8: Vector(AABB point 8)
 
    .. method:: getPhysicsId()
 

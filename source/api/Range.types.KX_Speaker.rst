@@ -129,9 +129,9 @@ base class --- :class:`SCA_IObject`
    Audio Effects
    *************
 
-   .. method:: SetEffect(type=aud.AUDIO_EFFECT_INVALID)
+   .. method:: SetEffect(type=aud.AUDIO_EFFECT_INVALID, filter=aud.AUDIO_FILTER_INVALID)
 
-      Adds a type of effect to the speaker. Use :ref:`these constants<aud-sound-effects>`
+      Add an effect and filter type to the speaker. Use :ref:`these constants<aud-sound-effects>` and :ref:`these constants<aud-sound-filter>` for filter.
 
       .. note::
 
@@ -145,9 +145,9 @@ base class --- :class:`SCA_IObject`
 
       :return: None
 
-   ******
-   Reverb
-   ******
+   *****************
+   Reverb Parameters
+   *****************
 
    .. attribute:: reverb_density
 
@@ -239,3 +239,28 @@ base class --- :class:`SCA_IObject`
 
       :default value: 1
       :type: int
+
+   *****************
+   Filter Parameters
+   *****************
+
+   .. attribute:: filter_gain
+
+      Sets the overall gain of the filter, applying a uniform reduction in signal volume. A value of 1.0 means no change, while lower values reduce the total volume.
+      
+      :default value: 1.0
+      :type: float
+
+   .. attribute:: filter_gainlf
+
+      Sets the gain applied to low frequencies. In a low-pass filter, this adjusts the intensity of the lowest frequencies. In high-pass and band-pass filters, it controls the reduction of low frequencies.
+      
+      :default value: 1.0
+      :type: float
+
+   .. attribute:: filter_gainhf
+
+      Sets the gain applied to high frequencies. In a high-pass filter, this adjusts the intensity of the highest frequencies. In low-pass and band-pass filters, it controls the reduction of high frequencies.
+      
+      :default value: 1.0
+      :type: float
