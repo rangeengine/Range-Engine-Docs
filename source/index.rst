@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
    
 =======================
-Range Engine 1.5 Manual
+Range Engine 1.6 Manual
 =======================
 
 Welcome to Range Engine Documentation! Here you will 

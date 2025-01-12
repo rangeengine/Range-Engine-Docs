@@ -1,5 +1,5 @@
 KX_MeshBuilder(KX_MeshBuilder)
-============================
+==============================
 
 base class --- :class:`KX_MeshBuilder`
 
