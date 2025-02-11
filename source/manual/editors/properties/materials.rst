@@ -13,7 +13,7 @@ Game Settings
 This panel contains properties that control how the object surfaces
 that use the material are rendered in real-time by the Range Engine.
 
-Backface Cull
+Backface Culling
    Hide the back-faces of objects rendered with this material.
    If "Off", both sides of the surface are visible (at the expense of lower rendering speed).
    Note that this setting is applied per material and not per face; e.g.
@@ -58,7 +58,7 @@ of faces to which the material is applied.
       No transformation.
 
 Foliage Shader
-================
+==============
 The **foliage shader** is a specialized type of shader used to render plant materials like leaves, grass, and trees. It simulates wind animation, helping to create more lifelike vegetation in games.
 
    Foliage Strength:
@@ -66,6 +66,9 @@ The **foliage shader** is a specialized type of shader used to render plant mate
 
    Foliage Turbulence:
       Motion cycle speed
+
+   Grass:
+      Lock the vertices under the object origin
 
 Custom Viewport Shader (VP Shader)
 ==================================
